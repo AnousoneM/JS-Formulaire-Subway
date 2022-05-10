@@ -8,6 +8,13 @@ footer {
     font-size: 0.8rem;
 }
 
+.sandwich-bg {
+    background-image: url(../img/submarine-sandwich.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+}
+
 .bg-form{
     background-color: #ffc20d;
 }
