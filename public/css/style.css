@@ -2,6 +2,12 @@ body {
     background-color: #008952;
 }
 
+footer {
+    height: 10vh;
+    padding-top: 1.8rem;
+    font-size: 0.8rem;
+}
+
 .bg-form{
     background-color: #ffc20d;
 }
