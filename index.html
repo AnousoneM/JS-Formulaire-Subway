@@ -25,37 +25,33 @@
                 <form action="">
 
                     <label class="col-lg-12 col-12" for="lastname">Nom <span id="lastnameError"
-                            class="ms-1 text-danger form-text">Veuillez
-                            renseigner votre nom</span></label>
-                    <input class="col-lg-12 col-12 mb-2" name="lastname" id="lastname" type="text"
+                            class="ms-1 text-danger form-text"></span></label>
+                    <input class="col-lg-12 col-12 mb-2" placeholder="ex. DUPONT" name="lastname" id="lastname" type="text"
                         onfocus="cleanError(id)">
 
                     <label class="col-lg-12 col-12" for="firstname">Prénom <span id="firstnameError"
-                            class="ms-1 text-danger form-text">Veuillez
-                            renseigner votre nom</span></label>
-                    <input class="col-lg-12 col-12 mb-2" name="firstname" id="firstname" type="text">
+                            class="ms-1 text-danger form-text"></span></label>
+                    <input class="col-lg-12 col-12 mb-2" placeholder="ex. Olivier" name="firstname" id="firstname" type="text">
 
                     <label class="col-lg-12 col-12" for="email">Email <span id="emailError"
-                            class="ms-1 text-danger form-text">Veuillez
-                            renseigner votre nom</span></label>
-                    <input class="col-lg-12 col-12 mb-2" name="email" id="email" type="email">
+                            class="ms-1 text-danger form-text"></span></label>
+                    <input class="col-lg-12 col-12 mb-2" placeholder="ex. olivier.dupont@mail.fr" name="email" id="email" type="email">
 
                     <label class="col-lg-12 col-12" for="password">Mot de passe <span id="passwordError"
-                            class="ms-1 text-danger form-text">Veuillez
-                            renseigner votre nom</span></label>
+                            class="ms-1 text-danger form-text"></label>
                     <input class="col-lg-12 col-12 mb-2" name="password" id="password" type="password">
 
-                    <label class="col-lg-12 col-12" for="confirmPassword">Confirmation du mot de passe</label>
+                    <label class="col-lg-12 col-12" for="confirmPassword">Confirmez le mot de passe</label>
                     <input class="col-lg-12 col-12 mb-2" name="confirmPassword" id="confirmPassword" type="password">
 
                     <div class="text-center">
                         <span id="cguError" class="d-block text-danger form-text">Veuillez accepter les CGV</span>
-                        <input type="checkbox" name="cgu" id="cgu">
+                        <input type="checkbox" name="cgu" id="cgu" value="accepted">
                         <p class="ms-2 d-inline form-text">J'ai lu et j'accepte les Conditions Générales de Ventes.</p>
                     </div>
 
                     <div class="text-center p-3">
-                        <button class="btn btn-light" type="button">S'INSCRIRE</button>
+                        <button class="btn btn-light" type="button" onclick="verifyInputs()">S'INSCRIRE</button>
                     </div>
                     <span class="d-block text-center">Déjà inscrit ? <a href="#" class="text-dark">Se
                             connecter</a></span>
